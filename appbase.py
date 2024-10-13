@@ -13,5 +13,5 @@ django.setup()
 import settings
 from settings import env
 
-from data.models import *
+from database.models import *
 
