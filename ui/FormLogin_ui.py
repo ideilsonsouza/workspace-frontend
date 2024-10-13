@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/FormLogin.ui'
+# Form implementation generated from reading ui file '/media/ideilson/Shilde/workspace/icware/workspace-frontend/ui/FormLogin.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

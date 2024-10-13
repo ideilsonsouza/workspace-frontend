@@ -10,8 +10,8 @@ from app.ui.ui_main import Ui_MainForm      # Tela principal (deve ser criada)
 
 class AppController:
     def __init__(self):
-        self.db = DatabaseManager('auth.db')
-        self.auth_manager = AuthManager(api_url="https://api.zabe.com.br")
+        self.db = DatabaseManager()
+        self.auth_manager = AuthManager()
         self.config_window = None
         self.login_window = None
         self.main_window = None

@@ -3,12 +3,12 @@ import json
 from database.connect import DatabaseManager  # Supondo que você salvou a classe DatabaseManager em um arquivo chamado database.py
 
 class AuthManager:
-    def __init__(self, api_url, db_name='auth.db'):
+    def __init__(self, api_url):
         """
         Inicializa a classe com a URL da API e o nome do banco de dados.
         """
         self.api_url = api_url
-        self.db = DatabaseManager(db_name)
+        self.db = DatabaseManager()
 
     def authenticate(self, username, password):
         """

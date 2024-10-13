@@ -10,29 +10,110 @@
     <height>375</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>Form</string>
+  <property name="minimumSize">
+   <size>
+    <width>589</width>
+    <height>375</height>
+   </size>
   </property>
-  <widget class="QLabel" name="lbl_caption">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>131</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Configurações</string>
-   </property>
-  </widget>
+  <property name="maximumSize">
+   <size>
+    <width>589</width>
+    <height>375</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Configurações</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabsView">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_settings">
+      <attribute name="title">
+       <string>Configurações</string>
+      </attribute>
+      <widget class="QPushButton" name="btn_aplicar">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>283</y>
+         <width>80</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Aplicar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_reset">
+       <property name="geometry">
+        <rect>
+         <x>23</x>
+         <y>283</y>
+         <width>171</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Resetar Configurações</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>531</width>
+         <height>52</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="lbl_server">
+          <property name="text">
+           <string>Servidor</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edt_server"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>425</x>
+         <y>80</y>
+         <width>127</width>
+         <height>52</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="lbl_port">
+          <property name="text">
+           <string>Porta</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edt_port"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_logs">
+      <attribute name="title">
+       <string>Logs</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

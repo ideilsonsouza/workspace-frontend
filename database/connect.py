@@ -3,7 +3,7 @@ import json
 from database.tables import tables_array  # Supondo que as tabelas estão no arquivo tables.py
 
 class DatabaseManager:
-    def __init__(self, db_name):
+    def __init__(self, db_name='data.db'):
         """
         Inicializa a classe com o nome do banco de dados e cria as tabelas.
         """

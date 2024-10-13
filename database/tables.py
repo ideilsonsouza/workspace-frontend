@@ -6,6 +6,7 @@ tables_array = [
     CREATE TABLE IF NOT EXISTS config (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         api_url TEXT NOT NULL,           -- URL do backend (ex.: URL da API)
+        api_port INTEGER NOT NULL,
         refresh_interval INTEGER NOT NULL, -- Intervalo de tempo para renovação de token (em segundos)
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
